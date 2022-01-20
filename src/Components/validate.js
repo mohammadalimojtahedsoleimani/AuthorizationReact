@@ -1,4 +1,4 @@
-const validate = ( data ) => {
+export const validate = ( data ) => {
     const errors = {};
     if ( ! data.name.trim () ) {
         errors.name = "Username Required"
@@ -14,7 +14,7 @@ const validate = ( data ) => {
     }
     if ( ! data.password ) {
         errors.password = "Password is required"
-    } else if ( data.password < 6 ) {
+    } else if ( data.password.length < 6 ) {
         errors.password = "Password is less than 6"
     } else {
         delete errors.password
