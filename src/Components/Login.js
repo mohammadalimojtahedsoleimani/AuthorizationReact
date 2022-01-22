@@ -31,7 +31,7 @@ const Login = () => {
     const submitHandler = event => {
         event.preventDefault ();
         if ( ! Object.keys ( errors ).length ) {
-            notify ( "You logged up successfully" , "success" )
+            notify ( "You logged up successfully s" , "success" )
         } else {
             notify ( "Invalid data!" , "error" )
             setTouched ( {
